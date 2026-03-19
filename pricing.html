@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Videography Pricing | FaithFrame Weddings | Dallas-Fort Worth</title>
-    <meta name="description" content="Transparent pricing for Christian wedding videography in North Texas. Packages start at $1,800. Serving Dallas, Fort Worth, Frisco, McKinney, Denton, and Plano.">
-    <meta name="keywords" content="wedding videography pricing, Dallas wedding videographer cost, Fort Worth wedding video packages, Christian wedding videography rates, North Texas wedding prices">
-    
+    <title>Wedding Videography Pricing | FaithFrame Weddings</title>
+    <meta name="description" content="Compare Christian wedding videography pricing and packages from FaithFrame Weddings in Dallas-Fort Worth.">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -15,123 +13,62 @@
       "provider": {
         "@type": "LocalBusiness",
         "name": "FaithFrame Weddings",
-        "description": "Christian wedding videography in North Texas",
-        "areaServed": ["Dallas", "Fort Worth", "Frisco", "McKinney", "Denton", "Plano"],
-        "url": "https://faithframeweddings.shop",
+        "description": "Christian wedding videography in Dallas-Fort Worth",
+        "url": "https://faithframeweddings.shop/pricing.html",
         "email": "info@faithframeweddings.shop",
         "telephone": "+1-555-123-4567"
-      },
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Essential Package",
-          "description": "Basic wedding videography coverage for intimate ceremonies",
-          "price": "1800",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Complete Package",
-          "description": "Full wedding day coverage with cinematic highlights",
-          "price": "2800",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Premium Package",
-          "description": "Comprehensive wedding videography with multiple videographers",
-          "price": "3800",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        }
-      ]
+      }
     }
     </script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.7;
             color: #2d3748;
             background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-            min-height: 100vh;
         }
 
         .navigation {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+        }
+
+        .nav-brand a,
+        .nav-links a,
+        .links-row a {
+            text-decoration: none;
         }
 
         .nav-brand a {
-            font-size: 1.5rem;
-            font-weight: 700;
             color: #2d3748;
-            text-decoration: none;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 1.45rem;
+            font-weight: 700;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
             color: #4a5568;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: #667eea;
-        }
-
-        .nav-links a.active {
-            color: #667eea;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
+            font-weight: 600;
         }
 
         .container {
@@ -140,329 +77,102 @@
             padding: 2rem;
         }
 
+        .hero,
+        .section,
+        .cta {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
         .hero {
-            text-align: center;
-            padding: 3rem 0 4rem;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: -2rem -2rem 4rem -2rem;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            color: #fff;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            opacity: 0.95;
-        }
-
-        .pricing-intro {
-            background: white;
-            padding: 2.5rem;
-            margin-bottom: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .pricing-intro h2 {
-            font-size: 2rem;
-            color: #2d3748;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
         }
 
-        .pricing-intro p {
-            font-size: 1.1rem;
-            color: #4a5568;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .packages-grid {
+        .packages {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
         }
 
-        .package-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-
-        .package-card.featured {
-            border: 3px solid #667eea;
-            transform: scale(1.02);
-        }
-
-        .package-card.featured::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 0 0 0 15px;
-        }
-
-        .package-header {
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .package-name {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-
-        .package-tagline {
-            font-size: 0.95rem;
-            color: #718096;
-            margin-bottom: 1.5rem;
-        }
-
-        .package-price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-
-        .package-price-note {
-            font-size: 0.9rem;
-            color: #718096;
-        }
-
-        .package-body {
-            padding: 2rem;
-        }
-
-        .package-features {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .package-features li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .package-features li:last-child {
-            border-bottom: none;
-        }
-
-        .package-features li::before {
-            content: '✓';
-            color: #48bb78;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .package-cta {
-            text-align: center;
-            padding: 0 2rem 2rem;
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            width: 100%;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        }
-
-        .additional-info {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            margin-bottom: 3rem;
-        }
-
-        .additional-info h2 {
-            font-size: 1.8rem;
-            color: #2d3748;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .info-item {
-            padding: 1.5rem;
+        .package {
             background: #f8fafc;
-            border-radius: 12px;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 2px solid #e2e8f0;
+        }
+
+        .package.featured {
+            border-color: #667eea;
+        }
+
+        .package h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            color: #667eea;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .package ul {
+            padding-left: 1.1rem;
+        }
+
+        .package li {
+            margin-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: #f8fafc;
+            border-radius: 14px;
+            padding: 1rem;
             border-left: 4px solid #667eea;
         }
 
-        .info-item h3 {
-            font-size: 1.2rem;
-            color: #2d3748;
-            margin-bottom: 0.75rem;
-        }
-
-        .info-item p {
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .faq-section {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            margin-bottom: 3rem;
-        }
-
-        .faq-section h2 {
-            font-size: 1.8rem;
-            color: #2d3748;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
         .faq-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .faq-question {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 0.75rem;
-        }
-
-        .faq-answer {
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .contact-cta {
-            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-            color: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 8px 30px rgba(72, 187, 120, 0.3);
-        }
-
-        .contact-cta h2 {
-            font-size: 2rem;
             margin-bottom: 1rem;
-            font-weight: 600;
         }
 
-        .contact-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+        .faq-item strong {
+            display: block;
+            margin-bottom: 0.35rem;
         }
 
-        .contact-info {
+        .links-row {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
             flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
-        .contact-item {
-            background: rgba(255,255,255,0.2);
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
+        .links-row a {
+            color: #667eea;
+            font-weight: 700;
         }
 
-        .contact-item strong {
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 1rem;
-            }
-            
-            .nav-links {
-                gap: 1rem;
-            }
-            
-            .nav-links a {
-                font-size: 0.9rem;
-            }
-            
-            .container {
-                padding: 1rem;
-            }
-            
-            .hero {
-                margin: -1rem -1rem 2rem -1rem;
-                padding: 2rem 1rem 3rem;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .packages-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .package-card.featured {
-                transform: none;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 1rem;
-            }
+        footer {
+            text-align: center;
+            color: #718096;
+            padding: 0 0 2rem;
         }
     </style>
 </head>
@@ -474,168 +184,106 @@
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="pricing.html" class="active">Pricing</a>
+                <a href="pricing.html">Pricing</a>
                 <a href="portfolio.html">Portfolio</a>
+                <a href="blog/index.html">Blog</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="hero">
-            <h1>Wedding Videography Pricing</h1>
-            <p>Transparent, honest pricing for Christian couples in Dallas-Fort Worth. No hidden fees, no surprises—just beautiful videography that honors your covenant moment.</p>
-        </div>
+    <main class="container">
+        <section class="hero">
+            <h1>Christian Wedding Videography Pricing in Dallas-Fort Worth</h1>
+            <p>This page is designed to help DFW couples compare package range, coverage level, and deliverables clearly. Each package is built around the moments that matter most in a Christ-centered wedding day.</p>
+        </section>
 
-        <div class="pricing-intro">
-            <h2>Investment in Your Forever</h2>
-            <p>Your wedding day happens once. Our pricing reflects the skill, time, and heart we pour into capturing your God-honoring love story. Each package includes professional editing, high-resolution delivery, and our commitment to excellence.</p>
-        </div>
-
-        <div class="packages-grid">
-            <div class="package-card">
-                <div class="package-header">
-                    <div class="package-name">Essential</div>
-                    <div class="package-tagline">Perfect for intimate ceremonies</div>
-                    <div class="package-price">$1,800</div>
-                    <div class="package-price-note">Up to 6 hours coverage</div>
-                </div>
-                <div class="package-body">
-                    <ul class="package-features">
-                        <li>Single videographer coverage</li>
-                        <li>Ceremony and reception highlights</li>
-                        <li>3-5 minute cinematic highlight reel</li>
+        <section class="section">
+            <h2>Choose The Coverage That Fits Your Day</h2>
+            <div class="packages">
+                <article class="package">
+                    <h3>Essential</h3>
+                    <div class="price">$1,800</div>
+                    <ul>
+                        <li>Up to 6 hours of coverage</li>
+                        <li>Single videographer</li>
+                        <li>3 to 5 minute highlight film</li>
                         <li>Full ceremony recording</li>
                         <li>Professional audio capture</li>
-                        <li>Digital delivery within 6 weeks</li>
-                        <li>Optional prayer coverage</li>
                     </ul>
-                </div>
-                <div class="package-cta">
-                    <a href="contact.html" class="cta-button">Get Started</a>
-                </div>
-            </div>
+                </article>
 
-            <div class="package-card featured">
-                <div class="package-header">
-                    <div class="package-name">Complete</div>
-                    <div class="package-tagline">Our most popular choice</div>
-                    <div class="package-price">$2,800</div>
-                    <div class="package-price-note">Up to 10 hours coverage</div>
-                </div>
-                <div class="package-body">
-                    <ul class="package-features">
-                        <li>Primary videographer + assistant</li>
-                        <li>Full day coverage (getting ready to reception)</li>
-                        <li>5-8 minute cinematic highlight reel</li>
+                <article class="package featured">
+                    <h3>Complete</h3>
+                    <div class="price">$2,800</div>
+                    <ul>
+                        <li>Up to 10 hours of coverage</li>
+                        <li>Lead videographer plus assistant</li>
+                        <li>5 to 8 minute highlight film</li>
                         <li>Full ceremony and vows recording</li>
                         <li>Reception speeches and first dance</li>
-                        <li>Professional multi-camera setup</li>
-                        <li>Wireless microphone for vows</li>
-                        <li>Custom worship music integration</li>
-                        <li>Digital + USB delivery within 4 weeks</li>
-                        <li>Pre-ceremony prayer time included</li>
+                        <li>Pre-ceremony prayer coverage</li>
                     </ul>
-                </div>
-                <div class="package-cta">
-                    <a href="contact.html" class="cta-button">Most Popular</a>
-                </div>
-            </div>
+                </article>
 
-            <div class="package-card">
-                <div class="package-header">
-                    <div class="package-name">Premium</div>
-                    <div class="package-tagline">Complete cinematic experience</div>
-                    <div class="package-price">$3,800</div>
-                    <div class="package-price-note">Unlimited coverage</div>
-                </div>
-                <div class="package-body">
-                    <ul class="package-features">
-                        <li>Two professional videographers</li>
-                        <li>Unlimited hours coverage</li>
-                        <li>10-15 minute cinematic documentary</li>
-                        <li>Full ceremony in 4K resolution</li>
-                        <li>Individual vows recordings</li>
-                        <li>Drone footage (weather permitting)</li>
-                        <li>Same-day highlight teaser</li>
-                        <li>Multiple camera angles</li>
-                        <li>Professional lighting setup</li>
-                        <li>Custom music licensing</li>
-                        <li>Expedited 3-week delivery</li>
-                        <li>Engagement session included</li>
+                <article class="package">
+                    <h3>Premium</h3>
+                    <div class="price">$3,800</div>
+                    <ul>
+                        <li>Full-day coverage</li>
+                        <li>Two videographers</li>
+                        <li>10 to 15 minute film</li>
+                        <li>Drone footage when available</li>
+                        <li>Same-day teaser option</li>
                         <li>Extended prayer and blessing coverage</li>
                     </ul>
-                </div>
-                <div class="package-cta">
-                    <a href="contact.html" class="cta-button">Premium Experience</a>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="additional-info">
-            <h2>What's Included in Every Package</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h3>Professional Equipment</h3>
-                    <p>We use cinema-grade cameras, professional audio equipment, and backup systems to ensure nothing is missed on your special day.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Travel Within DFW</h3>
-                    <p>No additional travel fees for weddings within Dallas, Fort Worth, Frisco, McKinney, Denton, and Plano areas.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Personal Consultation</h3>
-                    <p>We meet with every couple to understand their vision, preferences, and special moments they want captured.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Christ-Centered Approach</h3>
-                    <p>Optional prayer time, respectful coverage of religious ceremonies, and worship music integration in your final video.</p>
-                </div>
+        <section class="section">
+            <h2>What Every Package Includes</h2>
+            <div class="grid">
+                <div class="card"><strong>Travel within DFW</strong><br>No additional travel fee for Dallas, Fort Worth, Frisco, Plano, Denton, and McKinney weddings.</div>
+                <div class="card"><strong>Planning support</strong><br>We talk through your timeline, ceremony details, and the moments you most want documented.</div>
+                <div class="card"><strong>Respectful ceremony coverage</strong><br>Prayer, worship, and Scripture are documented with care and strong audio capture.</div>
+                <div class="card"><strong>Clear delivery expectations</strong><br>Simple package structure, honest communication, and no guessing about what is included.</div>
             </div>
-        </div>
+        </section>
 
-        <div class="faq-section">
+        <section class="section">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
-                <div class="faq-question">How far in advance should we book?</div>
-                <div class="faq-answer">We recommend booking 6-12 months in advance, especially for popular wedding seasons (spring and fall). However, we can often accommodate shorter timelines depending on availability.</div>
+                <strong>How far in advance should we book?</strong>
+                <p>Many couples book 6 to 12 months ahead, especially for spring and fall dates in Dallas-Fort Worth.</p>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Do you travel outside the Dallas-Fort Worth area?</div>
-                <div class="faq-answer">Yes! We're happy to travel for destination weddings. Travel fees apply for locations outside our standard service area, typically starting at $200 for nearby areas.</div>
+                <strong>Can we customize a package?</strong>
+                <p>Yes. If your wedding day is shorter or you need a more tailored coverage plan, we can talk through the right fit.</p>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What if our wedding is longer than the package hours?</div>
-                <div class="faq-answer">Extended coverage is available at $150 per additional hour. We'll discuss your timeline during our consultation to recommend the best package fit.</div>
+                <strong>Do you travel outside DFW?</strong>
+                <p>Yes. Travel outside our normal service area can be quoted based on distance and schedule.</p>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Can we customize our package?</div>
-                <div class="faq-answer">Absolutely! We understand every wedding is unique. We can add drone footage, additional videographers, or extended coverage to any package.</div>
+                <strong>Do you offer payment plans?</strong>
+                <p>Yes. We can discuss payment timing during your consultation.</p>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">What's your payment schedule?</div>
-                <div class="faq-answer">We require a 50% deposit to secure your date, with the remaining balance due 30 days before your wedding. Payment plans are available for couples who need them.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Do you offer payment plans?</div>
-                <div class="faq-answer">Yes, we understand wedding expenses add up quickly. We offer flexible payment plans to help make our services accessible to Christian couples. Contact us to discuss options.</div>
-            </div>
-        </div>
+        </section>
 
-        <div class="contact-cta">
-            <h2>Ready to Preserve Your Covenant Moment?</h2>
-            <p>Let's discuss which package best fits your wedding day vision and budget</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>info@faithframeweddings.shop</strong>
-                </div>
-                <div class="contact-item">
-                    <strong>(555) 123-4567</strong>
-                </div>
+        <section class="cta">
+            <h2>Need Help Choosing The Right Package?</h2>
+            <p>Tell us about your venue, ceremony, and priorities, and we will help you choose the package that best fits your wedding day.</p>
+            <div class="links-row">
+                <a href="contact.html">Start Your Consultation</a>
+                <a href="portfolio.html">View Portfolio</a>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.95rem;">Free consultation • No pressure • Christ-centered service</p>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 FaithFrame Weddings. All rights reserved.
+    </footer>
 </body>
 </html>

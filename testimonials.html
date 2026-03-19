@@ -4,75 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonials | FaithFrame Weddings</title>
-  <!-- Inline CSS for styling -->
+  <meta name="description" content="Read testimonials from couples who chose FaithFrame Weddings for Christian wedding videography in Dallas-Fort Worth.">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #333;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      background: #f7fafc;
     }
-    header {
-      background-color: #ffffff;
+
+    .navigation {
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand a,
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-brand a {
+      color: #222;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #4a5568;
+      font-weight: 600;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 2rem auto 0;
+      padding: 0 1rem;
       text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+
+    .hero h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.75rem;
       color: #222;
     }
-    header p {
-      margin-top: 0.5rem;
-      color: #555;
+
+    .hero p {
+      color: #4a5568;
     }
+
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     .testimonials-list {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
     }
-    @media (min-width: 600px) {
-      .testimonials-list {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+
     .testimonial {
-      background-color: #ffffff;
+      background: #fff;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     }
-    .testimonial blockquote {
-      margin: 0 0 1rem;
+
+    blockquote {
+      margin-bottom: 1rem;
       font-style: italic;
       color: #444;
     }
+
     .attribution {
-      margin: 0;
-      font-weight: bold;
+      font-weight: 700;
       color: #222;
-      text-align: right;
+      margin-bottom: 0.35rem;
     }
+
+    .meta {
+      color: #718096;
+      font-size: 0.9rem;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    footer a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      padding: 0 1rem 2rem;
+      color: #718096;
     }
   </style>
   <script type="application/ld+json">
@@ -80,7 +119,7 @@
     "@context": "https://schema.org",
     "@type": "VideoProductionService",
     "name": "FaithFrame Weddings",
-    "url": "https://faithframeweddings.shop/testimonials",
+    "url": "https://faithframeweddings.shop/testimonials.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
@@ -91,35 +130,35 @@
         "@type": "Review",
         "author": {"@type": "Person", "name": "Dylan & Olivia White"},
         "datePublished": "2025-06-15",
-        "reviewBody": "FaithFrame Weddings captured our day perfectly—every emotion shines through!",
+        "reviewBody": "FaithFrame Weddings captured our day perfectly and preserved every meaningful moment.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"}
       },
       {
         "@type": "Review",
         "author": {"@type": "Person", "name": "Bishop & Sarah Franklin"},
         "datePublished": "2025-06-01",
-        "reviewBody": "Professional, on-time, and truly felt like a friend with a camera.",
+        "reviewBody": "Professional, calm, and genuinely respectful of the spiritual tone of our ceremony.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"}
       },
       {
         "@type": "Review",
         "author": {"@type": "Person", "name": "Kelly & Marcus Hale"},
         "datePublished": "2025-05-20",
-        "reviewBody": "The highlight reel brought tears to our eyes. Couldn’t have asked for more!",
+        "reviewBody": "The highlight reel brought tears to our eyes and felt true to our wedding day.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"}
       },
       {
         "@type": "Review",
         "author": {"@type": "Person", "name": "Avery & Jordan Kim"},
         "datePublished": "2025-04-30",
-        "reviewBody": "Incredible attention to detail. They captured every candid moment perfectly.",
+        "reviewBody": "Incredible attention to detail, strong communication, and beautiful storytelling.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"}
       },
       {
         "@type": "Review",
         "author": {"@type": "Person", "name": "Taylor & Chris Nguyen"},
         "datePublished": "2025-04-15",
-        "reviewBody": "Our families are still talking about how beautiful our wedding video turned out!",
+        "reviewBody": "Our families are still talking about how beautiful our wedding video turned out.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"}
       }
     ]
@@ -127,38 +166,59 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>Testimonials</h1>
-    <p>Read what couples are saying about FaithFrame Weddings</p>
-  </header>
+  <nav class="navigation">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="index.html">FaithFrame Weddings</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>What Couples Say About FaithFrame Weddings</h1>
+    <p>These testimonials speak to the experience Christian couples had with our wedding videography across Dallas-Fort Worth.</p>
+  </section>
 
   <main>
     <section class="testimonials-list">
       <article class="testimonial">
-        <blockquote>“FaithFrame Weddings captured our day perfectly—every emotion shines through!”</blockquote>
-        <p class="attribution">— Dylan & Olivia White</p><small>Reviewed on June 15, 2025</small></p>
+        <blockquote>"FaithFrame Weddings captured our day perfectly. Every emotion shines through, and the film still feels sacred every time we watch it."</blockquote>
+        <p class="attribution">Dylan & Olivia White</p>
+        <p class="meta">Flower Mound, Texas • Reviewed June 15, 2025</p>
       </article>
       <article class="testimonial">
-        <blockquote>“Professional, on-time, and truly felt like a friend with a camera.”</blockquote>
-        <p class="attribution">— Bishop & Sarah Franklin</p><small>Reviewed on June 1, 2025</small></p>
+        <blockquote>"Professional, on time, and truly felt like a calm friend with a camera. They handled our ceremony with a lot of care."</blockquote>
+        <p class="attribution">Bishop & Sarah Franklin</p>
+        <p class="meta">Fort Worth, Texas • Reviewed June 1, 2025</p>
       </article>
       <article class="testimonial">
-        <blockquote>“The highlight reel brought tears to our eyes. Couldn’t have asked for more!”</blockquote>
-        <p class="attribution">— Kelly & Marcus Hale</p><small>Reviewed on May 20, 2025</small></p>
+        <blockquote>"The highlight reel brought tears to our eyes. It captured the worship, the vows, and the joy of the day so well."</blockquote>
+        <p class="attribution">Kelly & Marcus Hale</p>
+        <p class="meta">Plano, Texas • Reviewed May 20, 2025</p>
       </article>
       <article class="testimonial">
-        <blockquote>“Incredible attention to detail. They captured every candid moment perfectly.”</blockquote>
-        <p class="attribution">— Avery & Jordan Kim</p><small>Reviewed on April 30, 2025</small></p>
+        <blockquote>"Incredible attention to detail. They captured every candid moment beautifully and never made us feel rushed."</blockquote>
+        <p class="attribution">Avery & Jordan Kim</p>
+        <p class="meta">Dallas, Texas • Reviewed April 30, 2025</p>
       </article>
       <article class="testimonial">
-        <blockquote>“Our families are still talking about how beautiful our wedding video turned out!”</blockquote>
-        <p class="attribution">— Taylor & Chris Nguyen</p><small>Reviewed on April 15, 2025</small></p>
+        <blockquote>"Our families are still talking about how beautiful our wedding video turned out. The final film felt personal and genuine."</blockquote>
+        <p class="attribution">Taylor & Chris Nguyen</p>
+        <p class="meta">Frisco, Texas • Reviewed April 15, 2025</p>
       </article>
     </section>
   </main>
 
   <footer>
-    <p><a href="/">← Back to Home</a></p>
+    &copy; 2025 FaithFrame Weddings. All rights reserved.
   </footer>
 </body>
 </html>

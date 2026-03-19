@@ -1,157 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog | Faith Frame Weddings</title>
-  <meta name="description" content="Explore our expert guides on choosing a wedding videographer, budgeting tips, top venues, and more in the Dallas–Fort Worth area.">
-
-  <!-- JSON-LD for Blog index -->
+  <title>Wedding Videography Blog | FaithFrame Weddings</title>
+  <meta name="description" content="Read FaithFrame Weddings guides on choosing a Christian wedding videographer, budgeting, venues, and prayerful moments in Dallas-Fort Worth.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Faith Frame Weddings Blog",
-    "description": "Expert articles on wedding videography in Dallas–Fort Worth.",
-    "url": "https://faithframeweddings.shop/blog/",
+    "name": "FaithFrame Weddings Blog",
+    "description": "Guides for couples planning wedding videography in Dallas-Fort Worth.",
+    "url": "https://faithframeweddings.shop/blog/index.html",
     "blogPost": [
-      {"@type":"BlogPosting","headline":"How to Choose a Wedding Videographer in Dallas–Fort Worth","url":"/blog/choose-videographer-dfw.html"},
-      {"@type":"BlogPosting","headline":"How to Budget for Wedding Videography in DFW","url":"/blog/budgeting-for-video.html"},
-      {"@type":"BlogPosting","headline":"Top Dallas–Fort Worth Wedding Venues for Film","url":"/blog/top-venues-dfw.html"},
-      {"@type":"BlogPosting","headline":"Tips for Capturing Prayerful Moments on Video","url":"/blog/prayerful-moments.html"}
+      {"@type": "BlogPosting", "headline": "How to Choose a Wedding Videographer in Dallas-Fort Worth", "url": "https://faithframeweddings.shop/blog/choose-videographer-dfw.html"},
+      {"@type": "BlogPosting", "headline": "How to Budget for Wedding Videography in DFW", "url": "https://faithframeweddings.shop/blog/budgeting-for-video.html"},
+      {"@type": "BlogPosting", "headline": "Top Dallas-Fort Worth Wedding Venues for Film", "url": "https://faithframeweddings.shop/blog/top-venues-dfw.html"},
+      {"@type": "BlogPosting", "headline": "Tips for Capturing Prayerful Moments on Video", "url": "https://faithframeweddings.shop/blog/prayerful-moments.html"}
     ]
   }
   </script>
-
-  <!-- Inline critical CSS -->
   <style>
-    :root {
-      --primary: #2d3748;
-      --accent: #d97706;
-      --bg: #f9fafb;
-      --text: #1a202c;
-      --card-bg: #ffffff;
-      --transition: 0.3s ease;
-    }
-    *, *::before, *::after {
+    * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    html {
-      font-size: 100%;
-      -webkit-text-size-adjust: 100%;
-    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-      line-height: 1.5;
-      background-color: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #1a202c;
     }
-    header {
-      background: var(--card-bg);
-      padding: 1rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+
+    .navigation {
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
-    header h1 {
-      font-size: 1.5rem;
-      color: var(--primary);
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    main {
-      max-width: 680px;
-      margin: 1.5rem auto;
-      padding: 0 1rem;
-    }
-    .post-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    .post-list article {
-      background: var(--card-bg);
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      transition: transform var(--transition);
-    }
-    .post-list article:hover {
-      transform: translateY(-4px);
-    }
-    .post-list h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      color: var(--primary);
-    }
-    .post-list p {
-      font-size: 1rem;
-      color: #4a5568;
-      margin-bottom: 0.75rem;
-    }
-    .read-more {
-      font-size: 0.95rem;
-      color: var(--accent);
+
+    .nav-brand a,
+    .nav-links a {
       text-decoration: none;
+    }
+
+    .nav-brand a {
+      color: #2d3748;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #4a5568;
       font-weight: 600;
     }
-    .read-more:hover {
-      text-decoration: underline;
+
+    .nav-links a.active {
+      color: #d97706;
     }
+
+    .hero,
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.75rem;
+      color: #2d3748;
+    }
+
+    .hero p {
+      color: #4a5568;
+      max-width: 700px;
+    }
+
+    .post-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    article {
+      background: #fff;
+      padding: 1.25rem;
+      border-radius: 14px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    article h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    article h2 a,
+    .read-more {
+      text-decoration: none;
+    }
+
+    article h2 a {
+      color: #2d3748;
+    }
+
+    article p {
+      color: #4a5568;
+      margin-bottom: 0.8rem;
+    }
+
+    .read-more {
+      color: #d97706;
+      font-weight: 700;
+    }
+
     footer {
       text-align: center;
-      padding: 1.5rem 0;
-      font-size: 0.875rem;
       color: #718096;
-    }
-    @media (min-width: 600px) {
-      .post-list {
-        grid-template-columns: 1fr 1fr;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
+      padding: 0 1rem 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Faith Frame Weddings Blog</h1>
-  </header>
+  <nav class="navigation">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="../index.html">FaithFrame Weddings</a>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="index.html" class="active">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Wedding Videography Advice for Dallas-Fort Worth Couples</h1>
+    <p>The FaithFrame Weddings blog answers practical questions Christian couples ask when choosing a wedding videographer in DFW, comparing venues, setting budgets, and preserving meaningful moments on film.</p>
+  </section>
+
   <main>
     <section class="post-list">
-
       <article>
-        <h2><a href="/blog/choose-videographer-dfw.html">How to Choose a Wedding Videographer in Dallas &ndash; Fort Worth</a></h2>
-        <p>Discover the style, budget, and venue considerations to find the perfect videographer for your DFW wedding.</p>
-        <a class="read-more" href="/blog/choose-videographer-dfw.html">Read more &rarr;</a>
+        <h2><a href="choose-videographer-dfw.html">How to Choose a Wedding Videographer in Dallas-Fort Worth</a></h2>
+        <p>What to compare when you are narrowing down style, experience, pricing, and church or venue fit.</p>
+        <a class="read-more" href="choose-videographer-dfw.html">Read more</a>
       </article>
 
       <article>
-        <h2><a href="/blog/budgeting-for-video.html">How to Budget for Wedding Videography in DFW</a></h2>
-        <p>Learn average costs, package breakdowns, and negotiation tips to plan your wedding film budget.</p>
-        <a class="read-more" href="/blog/budgeting-for-video.html">Read more &rarr;</a>
+        <h2><a href="budgeting-for-video.html">How to Budget for Wedding Videography in DFW</a></h2>
+        <p>How couples in Dallas-Fort Worth can think about package range, priorities, and realistic planning.</p>
+        <a class="read-more" href="budgeting-for-video.html">Read more</a>
       </article>
 
       <article>
-        <h2><a href="/blog/top-venues-dfw.html">Top Dallas–Fort Worth Wedding Venues for Film</a></h2>
-        <p>Explore the most cinematic locations in the DFW area, from grand ballrooms to garden retreats.</p>
-        <a class="read-more" href="/blog/top-venues-dfw.html">Read more &rarr;</a>
+        <h2><a href="top-venues-dfw.html">Top Dallas-Fort Worth Wedding Venues for Film</a></h2>
+        <p>Venue ideas that tend to film beautifully, from churches to gardens to classic North Texas event spaces.</p>
+        <a class="read-more" href="top-venues-dfw.html">Read more</a>
       </article>
 
       <article>
-        <h2><a href="/blog/prayerful-moments.html">Tips for Capturing Prayerful Moments on Video</a></h2>
-        <p>Get expert advice on documenting the sacred, heartfelt parts of your wedding ceremony.</p>
-        <a class="read-more" href="/blog/prayerful-moments.html">Read more &rarr;</a>
+        <h2><a href="prayerful-moments.html">Tips for Capturing Prayerful Moments on Video</a></h2>
+        <p>How to plan for prayer, worship, blessings, and other meaningful moments in a Christ-centered wedding film.</p>
+        <a class="read-more" href="prayerful-moments.html">Read more</a>
       </article>
-
     </section>
   </main>
+
   <footer>
-    &copy; 2025 Faith Frame Weddings | <a href="/">faithframeweddings.shop</a>
+    &copy; 2025 FaithFrame Weddings. All rights reserved.
   </footer>
 </body>
 </html>

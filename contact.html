@@ -2,43 +2,197 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact – FaithFrame Weddings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact FaithFrame Weddings | Christian Wedding Videographer in DFW</title>
+    <meta name="description" content="Contact FaithFrame Weddings to ask about availability, pricing, and wedding videography for Christian couples in Dallas-Fort Worth.">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
-        nav a { margin: 0 10px; text-decoration: none; color: #555; }
-        nav a.active { font-weight: bold; color: #000; }
-        label { display: block; margin-top: 1rem; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+        }
+
+        .navigation {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand a,
+        .nav-links a {
+            text-decoration: none;
+        }
+
+        .nav-brand a {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .nav-links a.active {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: 700;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.85rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 10px;
+            font: inherit;
+        }
+
+        button {
+            width: fit-content;
+            padding: 0.9rem 1.25rem;
+            border: 0;
+            border-radius: 10px;
+            background: #667eea;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .detail {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            padding-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="blog/index.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="active">Contact</a>
-</nav>
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">FaithFrame Weddings</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog/index.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<h1>Contact Us</h1>
-<p>We’d love to hear from you! Whether you’re planning your wedding or just want to learn more, feel free to reach out.</p>
+    <main class="container">
+        <section class="card">
+            <h1>Contact a Christian Wedding Videographer in DFW</h1>
+            <p>Reach out if you want to ask about availability, pricing, or what coverage would make sense for your Dallas-Fort Worth wedding day.</p>
+            <p>We work with Christian couples across North Texas and reply with straightforward next steps, package guidance, and answers to questions about prayerful wedding film coverage.</p>
+        </section>
 
-<form>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" style="width: 100%; padding: 8px;" required>
+        <section class="card">
+            <h2>Tell Us About Your Wedding</h2>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" style="width: 100%; padding: 8px;" required>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" style="width: 100%; padding: 8px;" required></textarea>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
 
-    <button type="submit" style="margin-top: 1rem; padding: 10px 20px;">Send Message</button>
-</form>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-<footer style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
-    This site is part of a private research project on AI-driven search and visibility. It does not represent an active business.
-</footer>
+        <section class="card">
+            <h2>Quick Details</h2>
+            <div class="details">
+                <div class="detail"><strong>Service area</strong><br>Dallas, Fort Worth, Plano, Frisco, Denton, McKinney, and nearby North Texas cities.</div>
+                <div class="detail"><strong>Email</strong><br>info@faithframeweddings.shop</div>
+                <div class="detail"><strong>Phone</strong><br>(555) 123-4567</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 FaithFrame Weddings. All rights reserved.
+    </footer>
 </body>
 </html>

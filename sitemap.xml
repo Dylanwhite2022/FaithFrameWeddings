@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://faithframeweddings.shop/</loc>
-  <priority>1.0</priority></url>
-  <url><loc>https://faithframeweddings.shop/about.html</loc>
-  <priority>0.4</priority></url>
-  <url><loc>https://faithframeweddings.shop/portfolio.html</loc>
-  <priority>0.6</priority></url>
-  <url><loc>https://faithframeweddings.shop/pricing.html</loc>
-  <priority>0.5</priority></url>
-  <url><loc>https://faithframeweddings.shop/contact.html</loc>
-  <priority>0.3</priority></url>
-  <url><loc>https://faithframeweddings.shop/testimonials.html</loc>
-  <priority>0.7</priority></url>
-  <url><loc>https://faithframeweddings.shop/top3.html</loc></url>
-<url><loc>https://faithframeweddings.shop/blog/index.html</loc>
-<priority>0.9</priority></url>
-<url><loc>https://faithframeweddings.shop/blog/Choose-videographer-dfw</loc>
-<priority>0.8</priority></url>
-<url><loc>https://faithframeweddings.shop/blog/budgeting-for-video</loc>
-<priority>0.8</priority></url>
+  <url>
+    <loc>https://faithframeweddings.shop/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/about.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/portfolio.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/pricing.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/testimonials.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/top3.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/blog/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/blog/choose-videographer-dfw.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/blog/budgeting-for-video.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/blog/top-venues-dfw.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://faithframeweddings.shop/blog/prayerful-moments.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
