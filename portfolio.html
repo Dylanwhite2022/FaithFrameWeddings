@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Video Portfolio | FaithFrame Weddings | Christian Videography Examples</title>
+    <meta name="description" content="View our Christian wedding videography portfolio. Cinematic wedding videos from Dallas, Fort Worth, Frisco, McKinney, Denton, and Plano ceremonies.">
+    <meta name="keywords" content="wedding video portfolio, Christian wedding videography examples, Dallas wedding videos, Fort Worth wedding cinematography, faith-based wedding films">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "FaithFrame Weddings Portfolio",
+      "description": "Portfolio of Christian wedding videography work showcasing God-honoring love stories",
+      "creator": {
+        "@type": "LocalBusiness",
+        "name": "FaithFrame Weddings",
+        "founder": {
+          "@type": "Person",
+          "name": "Eli Shepherd"
+        },
+        "areaServed": ["Dallas", "Fort Worth", "Frisco", "McKinney", "Denton", "Plano"],
+        "url": "https://faithframeweddings.shop",
+        "email": "info@faithframeweddings.shop",
+        "telephone": "+1-555-123-4567"
+      },
+      "genre": "Wedding Videography",
+      "keywords": ["Christian wedding videos", "Faith-based cinematography", "Dallas wedding videographer", "North Texas wedding films"],
+      "locationCreated": {
+        "@type": "Place",
+        "name": "Dallas-Fort Worth Metroplex"
+      }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            min-height: 100vh;
+        }
+
+        .navigation {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-brand a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a.active {
+            color: #667eea;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0 4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -2rem -2rem 4rem -2rem;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .portfolio-intro {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .portfolio-intro h2 {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-intro p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #718096;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-image::before {
+            content: '📸';
+            font-size: 3rem;
+            opacity: 0.5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+        }
+
+        .portfolio-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.75rem;
+        }
+
+        .portfolio-location {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .portfolio-location::before {
+            content: '📍';
+            font-size: 0.9rem;
+        }
+
+        .portfolio-description {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-tag {
+            background: #f7fafc;
+            color: #4a5568;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .portfolio-highlights {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+        }
+
+        .portfolio-highlights h4 {
+            font-size: 1rem;
+            color: #2d3748;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .highlights-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .highlights-list li {
+            color: #4a5568;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .highlights-list li::before {
+            content: '✓';
+            color: #48bb78;
+            font-weight: bold;
+        }
+
+        .testimonial-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-section h2 {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .testimonial {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .testimonial-quote {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #667eea;
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .testimonial-location {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .contact-cta {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(72, 187, 120, 0.3);
+        }
+
+        .contact-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item strong {
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 1rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .hero {
+                margin: -1rem -1rem 2rem -1rem;
+                padding: 2rem 1rem 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .portfolio-item {
+                margin: 0;
+            }
+            
+            .portfolio-image {
+                height: 250px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">FaithFrame Weddings</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="blog/index.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Our Wedding Video Portfolio</h1>
+            <p>Every love story is unique, and every wedding film should be too. Here are some of our favorite God-honoring celebrations we've had the privilege to capture.</p>
+        </div>
+
+        <div class="portfolio-intro">
+            <h2>Capturing Covenant Moments</h2>
+            <p>Each wedding film is prayerfully crafted to reflect the couple's unique love story while honoring God. From intimate chapel ceremonies to grand celebrations, we bring the same heart and excellence to every project.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <!-- IMAGE 1 GOES HERE -->
+                    <span>Chapel Wedding Video Preview</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Sarah & Michael's Chapel Wedding</h3>
+                    <div class="portfolio-location">Historic Chapel, Dallas, TX</div>
+                    <p class="portfolio-description">A beautiful intimate ceremony in a historic Dallas chapel. This couple wanted their faith to be the centerpiece of their celebration, and we captured every prayer, every tear of joy, and every moment of worship throughout their special day.</p>
+                    <div class="portfolio-details">
+                        <span class="detail-tag">Complete Package</span>
+                        <span class="detail-tag">Chapel Ceremony</span>
+                        <span class="detail-tag">50 Guests</span>
+                        <span class="detail-tag">Prayer Coverage</span>
+                    </div>
+                    <div class="portfolio-highlights">
+                        <h4>Video Highlights:</h4>
+                        <ul class="highlights-list">
+                            <li>Pre-ceremony prayer time</li>
+                            <li>Worship music integration</li>
+                            <li>Personal vows recording</li>
+                            <li>Family blessing moments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <!-- IMAGE 2 GOES HERE -->
+                    <span>Vineyard Wedding Video Preview</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Jessica & David's Vineyard Celebration</h3>
+                    <div class="portfolio-location">Hidden Springs Vineyard, Frisco, TX</div>
+                    <p class="portfolio-description">An outdoor vineyard wedding that perfectly blended natural beauty with heartfelt faith. The couple's pastor led a meaningful ceremony surrounded by rolling hills and autumn colors, creating a stunning backdrop for their covenant moment.</p>
+                    <div class="portfolio-details">
+                        <span class="detail-tag">Premium Package</span>
+                        <span class="detail-tag">Outdoor Ceremony</span>
+                        <span class="detail-tag">120 Guests</span>
+                        <span class="detail-tag">Drone Footage</span>
+                    </div>
+                    <div class="portfolio-highlights">
+                        <h4>Video Highlights:</h4>
+                        <ul class="highlights-list">
+                            <li>Aerial vineyard views</li>
+                            <li>Golden hour cinematography</li>
+                            <li>Live worship team coverage</li>
+                            <li>Reception toasts and dancing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <!-- IMAGE 3 GOES HERE -->
+                    <span>Church Wedding Video Preview</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Rachel & James' Traditional Church Wedding</h3>
+                    <div class="portfolio-location">First Baptist Church, Plano, TX</div>
+                    <p class="portfolio-description">A classic church wedding with rich traditions and deep faith at its core. This couple's ceremony featured a full choir, traditional hymns, and a powerful message about covenant marriage that moved everyone present to tears of joy.</p>
+                    <div class="portfolio-details">
+                        <span class="detail-tag">Complete Package</span>
+                        <span class="detail-tag">Traditional Church</span>
+                        <span class="detail-tag">200 Guests</span>
+                        <span class="detail-tag">Full Choir</span>
+                    </div>
+                    <div class="portfolio-highlights">
+                        <h4>Video Highlights:</h4>
+                        <ul class="highlights-list">
+                            <li>Processional with organ music</li>
+                            <li>Pastor's marriage sermon</li>
+                            <li>Choir performance</li>
+                            <li>Unity candle ceremony</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <!-- IMAGE 4 GOES HERE -->
+                    <span>Garden Wedding Video Preview</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Amanda & Christopher's Garden Wedding</h3>
+                    <div class="portfolio-location">Dallas Arboretum & Botanical Garden, Dallas, TX</div>
+                    <p class="portfolio-description">A spring garden wedding surrounded by blooming flowers and natural beauty. This couple chose to exchange vows in God's creation, and we captured the peaceful, sacred atmosphere of their outdoor ceremony and joyful celebration.</p>
+                    <div class="portfolio-details">
+                        <span class="detail-tag">Premium Package</span>
+                        <span class="detail-tag">Garden Setting</span>
+                        <span class="detail-tag">80 Guests</span>
+                        <span class="detail-tag">Spring Flowers</span>
+                    </div>
+                    <div class="portfolio-highlights">
+                        <h4>Video Highlights:</h4>
+                        <ul class="highlights-list">
+                            <li>Natural spring lighting</li>
+                            <li>Garden ceremony backdrop</li>
+                            <li>Acoustic worship music</li>
+                            <li>Outdoor reception dancing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h2>What Our Couples Say</h2>
+            <div class="testimonial">
+                <div class="testimonial-quote">
+                    Eli and his team didn't just film our wedding—they captured our hearts. Watching our wedding video feels like reliving the most sacred day of our lives. Every prayer, every smile, every tear of joy is preserved beautifully. We're so grateful for their Christ-centered approach and incredible attention to detail.
+                </div>
+                <div class="testimonial-author">Sarah & Michael Johnson</div>
+                <div class="testimonial-location">Dallas, Texas</div>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <h2>Ready to Create Your Wedding Film?</h2>
+            <p>Let's discuss how we can capture your unique love story with the same care and excellence</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>info@faithframeweddings.shop</strong>
+                </div>
+                <div class="contact-item">
+                    <strong>(555) 123-4567</strong>
+                </div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.95rem;">View our pricing • Schedule consultation • Book your date</p>
+        </div>
+    </div>
+</body>
+</html>

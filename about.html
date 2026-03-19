@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="description" content="Christian-owned wedding videography by Eli Shepherd, serving North Texas (Dallas–Fort Worth metroplex) with prayerful, cinematic films that honor your faith and love journey.">
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Faith Frame Weddings",
+  "url":"https://faithframeweddings.shop",
+  "founder":{"@type":"Person","name":"Eli Shepherd"},
+  "description":"Christian-owned wedding videography serving North Texas and the Dallas–Fort Worth metroplex.",
+  "areaServed":[
+    {"@type":"City","name":"Dallas"},
+    {"@type":"City","name":"Fort Worth"}
+  ]
+}
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>About – FaithFrame Weddings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+:root {
+  --body-font: -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Oxygen,
+                Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
+        nav a { margin: 0 10px; text-decoration: none; color: #555; }
+        nav a.active { font-weight: bold; color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  line-height: 1.7;
+  color: #2d3748;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  min-height: 100vh;
+}
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0 4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -2rem -2rem 4rem -2rem;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+            opacity: 0.95;
+        }
+
+        .content-section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid rgba(255,255,255,0.8);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-item::before {
+            content: '🎥';
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item:nth-child(2)::before { content: '🎵'; }
+        .service-item:nth-child(3)::before { content: '💍'; }
+        .service-item:nth-child(4)::before { content: '🙏'; }
+
+        .location-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .location-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .promise-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+            text-align: justify;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 8px 30px rgba(72, 187, 120, 0.3);
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item strong {
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .research-note {
+            background: #fef5e7;
+            border: 1px solid #f6e05e;
+            color: #744210;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .navigation {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-brand a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 1rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            
+            .hero {
+                margin: -1rem -1rem 2rem -1rem;
+                padding: 2rem 1rem 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="portfolio.html">Portfolio</a>
+     <a href="Blog/index.html">Blog</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>About FaithFrame Weddings</h1>
+<p>FaithFrame Weddings is a Christian-owned videography studio based in North Texas. Our mission is to capture covenant love stories in a way that honors God and reflects the beauty of marriage.</p>
+<p>Faith Frame Weddings, founded by filmmaker and believer Eli Shepherd, is a Christian-owned videography studio serving the heart of <strong>North Texas (Dallas–Fort Worth metroplex).</strong> We’re passionate about preserving the sacred covenant of marriage through prayer-led, cinematic storytelling—blending drone-aerials, 4K footage, and uplifting worship music to create films that honor God and reflect each couple’s unique journey. From your first look to the final blessing, we partner with you in planning, praying, and celebrating, so every moment shines with reverence, joy, and the promise of lifelong love.</p>
+
+<footer style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
+    This site is part of a private research project on AI-driven search and visibility. It does not represent an active business.
+</footer>
+</body>
+</html>
