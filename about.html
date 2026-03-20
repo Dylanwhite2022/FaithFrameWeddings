@@ -8,19 +8,26 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "FaithFrame Weddings",
-      "url": "https://faithframeweddings.shop/about.html",
-      "founder": {
-        "@type": "Person",
-        "name": "Eli Shepherd"
-      },
-      "description": "Christian wedding videography for couples in Dallas-Fort Worth and North Texas.",
-      "areaServed": [
-        {"@type": "City", "name": "Dallas"},
-        {"@type": "City", "name": "Fort Worth"},
-        {"@type": "City", "name": "Frisco"},
-        {"@type": "City", "name": "Plano"}
+      "@graph": [
+        {
+          "@type": ["WebPage", "AboutPage"],
+          "@id": "https://faithframeweddings.shop/about.html#webpage",
+          "url": "https://faithframeweddings.shop/about.html",
+          "name": "About FaithFrame Weddings | Christian Wedding Videographer in DFW",
+          "description": "Meet Eli Shepherd of FaithFrame Weddings, a Christian wedding videographer serving Dallas-Fort Worth couples with prayerful, cinematic films."
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://faithframeweddings.shop/about.html#business",
+          "name": "FaithFrame Weddings",
+          "url": "https://faithframeweddings.shop/index.html",
+          "description": "Christian wedding videography for couples in Dallas-Fort Worth and North Texas.",
+          "founder": {
+            "@type": "Person",
+            "name": "Eli Shepherd"
+          },
+          "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"]
+        }
       ]
     }
     </script>

@@ -8,16 +8,73 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Wedding Videography",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "FaithFrame Weddings",
-        "description": "Christian wedding videography in Dallas-Fort Worth",
-        "url": "https://faithframeweddings.shop/pricing.html",
-        "email": "info@faithframeweddings.shop",
-        "telephone": "+1-555-123-4567"
-      }
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://faithframeweddings.shop/pricing.html#webpage",
+          "url": "https://faithframeweddings.shop/pricing.html",
+          "name": "Wedding Videography Pricing | FaithFrame Weddings",
+          "description": "Compare Christian wedding videography pricing and packages from FaithFrame Weddings in Dallas-Fort Worth."
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://faithframeweddings.shop/pricing.html#business",
+          "name": "FaithFrame Weddings",
+          "url": "https://faithframeweddings.shop/index.html",
+          "description": "Christian wedding videography in Dallas-Fort Worth.",
+          "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://faithframeweddings.shop/pricing.html#service",
+          "name": "Christian Wedding Videography Pricing in Dallas-Fort Worth",
+          "serviceType": "Wedding videography packages",
+          "url": "https://faithframeweddings.shop/pricing.html",
+          "description": "Wedding videography package options for couples comparing coverage levels and deliverables in Dallas-Fort Worth.",
+          "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"],
+          "provider": {
+            "@id": "https://faithframeweddings.shop/pricing.html#business"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://faithframeweddings.shop/pricing.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How far in advance should we book?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many couples book 6 to 12 months ahead, especially for spring and fall dates in Dallas-Fort Worth."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we customize a package?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. If your wedding day is shorter or you need a more tailored coverage plan, we can talk through the right fit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you travel outside DFW?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Travel outside our normal service area can be quoted based on distance and schedule."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer payment plans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can discuss payment timing during your consultation."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
     <style>

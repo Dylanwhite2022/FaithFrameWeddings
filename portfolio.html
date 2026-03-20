@@ -8,14 +8,23 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "FaithFrame Weddings Portfolio",
-      "description": "Christian wedding videography portfolio for Dallas-Fort Worth couples.",
-      "creator": {
-        "@type": "LocalBusiness",
-        "name": "FaithFrame Weddings",
-        "url": "https://faithframeweddings.shop/portfolio.html"
-      }
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://faithframeweddings.shop/portfolio.html#webpage",
+          "url": "https://faithframeweddings.shop/portfolio.html",
+          "name": "Wedding Video Portfolio | FaithFrame Weddings",
+          "description": "View Christian wedding videography examples from FaithFrame Weddings across Dallas-Fort Worth and North Texas."
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://faithframeweddings.shop/portfolio.html#business",
+          "name": "FaithFrame Weddings",
+          "url": "https://faithframeweddings.shop/index.html",
+          "description": "Christian wedding videography services for couples across Dallas-Fort Worth and North Texas.",
+          "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"]
+        }
+      ]
     }
     </script>
     <style>

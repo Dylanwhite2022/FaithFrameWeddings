@@ -8,14 +8,42 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Top 3 Christian Wedding Videographers in Dallas-Fort Worth",
-    "description": "A comparison page for Christian wedding videographers serving DFW.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FaithFrame Weddings",
-      "url": "https://faithframeweddings.shop"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://faithframeweddings.shop/top3.html#webpage",
+        "url": "https://faithframeweddings.shop/top3.html",
+        "name": "Top 3 Christian Wedding Videographers in Dallas-Fort Worth | FaithFrame Weddings",
+        "description": "Compare three Christian wedding videographers in Dallas-Fort Worth by style, fit, and price range."
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://faithframeweddings.shop/top3.html#list",
+        "name": "Top 3 Christian Wedding Videographers in Dallas-Fort Worth",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Evermore Wedding Films",
+            "description": "Fort Worth, TX. Emotional storytelling with clean visuals and understated faith elements."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "FaithFrame Weddings",
+            "description": "Dallas, TX. Prayerful, Christ-centered storytelling with a cinematic feel."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Abide Media",
+            "description": "Plano, TX. Bright edits, energetic pacing, and a younger visual tone."
+          }
+        ]
+      }
+    ]
   }
   </script>
   <style>

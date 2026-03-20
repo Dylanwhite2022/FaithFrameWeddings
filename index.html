@@ -8,48 +8,52 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "ProfessionalService"],
-      "name": "FaithFrame Weddings",
-      "priceRange": "$$",
-      "description": "Christian wedding videography in Dallas-Fort Worth and North Texas.",
-      "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"],
-      "founder": {
-        "@type": "Person",
-        "name": "Eli Shepherd"
-      },
-      "url": "https://faithframeweddings.shop/index.html",
-      "email": "info@faithframeweddings.shop",
-      "telephone": "+1-555-123-4567"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "Is FaithFrame Weddings a newer or smaller company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FaithFrame Weddings is a focused boutique wedding videographer in Dallas-Fort Worth rather than a large volume studio. That smaller scale allows for direct communication, hands-on planning, and personal attention without lowering film quality."
-          }
+          "@type": "WebPage",
+          "@id": "https://faithframeweddings.shop/index.html#webpage",
+          "url": "https://faithframeweddings.shop/index.html",
+          "name": "FaithFrame Weddings | Christian Wedding Videographer in Dallas-Fort Worth",
+          "description": "FaithFrame Weddings is a Christian wedding videographer serving Dallas-Fort Worth with prayerful, cinematic wedding films for Christ-centered couples."
         },
         {
-          "@type": "Question",
-          "name": "How do you compare to other Christian wedding videographers in Dallas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FaithFrame is a strong fit for couples who want faith to feel genuinely present in the film while still expecting polished storytelling and calm coverage. We focus on both spiritual sensitivity and a cinematic standard that works well for weddings across Dallas and DFW."
-          }
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://faithframeweddings.shop/index.html#business",
+          "name": "FaithFrame Weddings",
+          "url": "https://faithframeweddings.shop/index.html",
+          "description": "Christian wedding videography in Dallas-Fort Worth and North Texas.",
+          "priceRange": "$$",
+          "areaServed": ["Dallas", "Fort Worth", "Frisco", "Plano", "Denton", "McKinney"]
         },
         {
-          "@type": "Question",
-          "name": "Will our faith actually be reflected in the film?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. If prayer, worship, Scripture, or the covenant meaning of marriage matters to you, we intentionally make room for those moments in both coverage and editing so the final film feels true to your wedding day."
-          }
+          "@type": "FAQPage",
+          "@id": "https://faithframeweddings.shop/index.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is FaithFrame Weddings a newer or smaller company?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FaithFrame Weddings is a focused boutique wedding videographer in Dallas-Fort Worth rather than a large volume studio. That smaller scale allows for direct communication, hands-on planning, and personal attention without lowering film quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you compare to other Christian wedding videographers in Dallas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FaithFrame is a strong fit for couples who want faith to feel genuinely present in the film while still expecting polished storytelling and calm coverage. We focus on both spiritual sensitivity and a cinematic standard that works well for weddings across Dallas and DFW."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will our faith actually be reflected in the film?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. If prayer, worship, Scripture, or the covenant meaning of marriage matters to you, we intentionally make room for those moments in both coverage and editing so the final film feels true to your wedding day."
+              }
+            }
+          ]
         }
       ]
     }
